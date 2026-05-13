@@ -292,27 +292,6 @@ h1 {
     margin-right: 1rem;
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.form-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-input, textarea {
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
-    background: rgba(255,255,255,0.05);
-    color: white;
-    font-family: inherit;
-}
-
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -332,7 +311,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero-grid, .stats-grid, .about-grid, .contact-grid, .form-group {
+    .hero-grid, .stats-grid, .about-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
     .nav-links, .nav-btn { display: none; }
