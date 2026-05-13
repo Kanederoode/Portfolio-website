@@ -1,0 +1,157 @@
+:root {
+    --bg-color: #fcfcfc;
+    --text-color: #333333;
+    --accent-color: #6d8299; /* Rustig blauw-grijs */
+    --light-gray: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    position: fixed;
+    width: 100%;
+    background: rgba(252, 252, 252, 0.9);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: var(--text-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.projects {
+    padding: 5rem 10%;
+}
+
+.projects h2, .about h2 {
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img {
+    height: 300px;
+    background-color: var(--light-gray);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Over mij */
+.about {
+    padding: 5rem 10%;
+    background-color: white;
+}
+
+.about p {
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    padding: 5rem 10%;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.email-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    margin: 2rem 0;
+    transition: 0.3s;
+}
+
+.email-link:hover {
+    color: var(--accent-color);
+}
+
+.socials {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #888;
+}
