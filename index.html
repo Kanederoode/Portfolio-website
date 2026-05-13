@@ -3,66 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn portfolio</title>
+    <title>Kane de Roode | Software Developer Portfolio</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">logo</div>
-        <ul>
-            <li><a href="#werk">Werk</a></li>
-            <li><a href="#over">Over mij</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container nav-wrapper">
+            <div class="logo">KDR<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Vaardigheden</a></li>
+                <li><a href="#ervaring">Ervaring</a></li>
+                <li><a href="#over">Over mij</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-btn">
+                <a href="#contact" class="btn btn-small">Hire Me</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-    <div class="hero">
-        <h1>Hallo, ik ben <span class="accent">Kane de Roode</span>.</h1> 
-        <p>Software developer met een passie voor het bouwen van gebruiksvriendelijke oplossingen.</p>
-        <a href="#werk" class="btn">Bekijk mijn ervaring</a>
-    </div>
-    </header>
-
-    <main id="werk">
-        <section class="projects">
-            <h2>Geselecteerd Werk</h2>
-            <div class="grid">
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <h3>Project 1</h3>
-                    <p>Een korte beschrijving</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <h3>Project 2</h3>
-                    <p>Focus op resultaat en gebruiksvriendelijkheid.</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <h3>Project 3</h3>
-                    <p>Een schone interface voor een complexe oplossing.</p>
+    <header id="home" class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-text fade-in">
+                <span class="badge">Open voor nieuwe uitdagingen</span>
+                <h1>Hallo, ik ben <br><span class="accent">Kane de Roode</span></h1>
+                <p>Software Developer gespecialiseerd in het bouwen van digitale ervaringen met focus op eenvoud, efficiëntie en schaalbaarheid.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#ervaring" class="btn btn-outline">Mijn Werk</a>
                 </div>
             </div>
-        </section>
+            <div class="hero-image fade-in">
+                <div class="img-container">
+                    <img src="https://via.placeholder.com/500x600" alt="Kane de Roode">
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <section id="over" class="about">
-            <h2>Over mij</h2>
-                <p>
-                    Ik ben een gedreven en leergierige softwareontwikkelaar met een sterke achtergrond in klantgericht werken en teamwork. 
-                    Na het behalen van mijn MBO 4 diploma Software Development bij MBO Rijnland, ben ik in staat om zowel zelfstandig als in teamverband effectieve oplossingen te ontwikkelen.
-                </p>
-            <h3>Vaardigheden</h3>
-                <p>Technisch: HTML, CSS, JavaScript, PHP en SQL</p>
-        </section>
-    </main>
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h2 class="stat-number">50+</h2>
+                <p>Projecten</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="stat-number">3+</h2>
+                <p>Jaar Ervaring</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="stat-number">100%</h2>
+                <p>Tevredenheid</p>
+            </div>
+        </div>
+    </section>
 
-    <footer id="contact">
-        <h2>Laten we praten</h2>
-            <p>Vragen of interesse in een samenwerking? Neem contact op.</p>
-            <a href="mailto:kanederoode@gmail.com" class="email-link">kanederoode@gmail.com</a> 
-            <p>Telefoon: 06-49610694 | Regio: Leiden</p>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technische Vaardigheden</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <i class="fa-brands fa-js icon"></i>
+                    <h3>JavaScript</h3>
+                    <p>Expertise in ES6+, DOM-manipulatie en asynchrone logica.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fa-brands fa-php icon"></i>
+                    <h3>PHP</h3>
+                    <p>Server-side scripting voor dynamische webapplicaties.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fa-solid fa-database icon"></i>
+                    <h3>SQL</h3>
+                    <p>Beheer en ontwerp van relationele databases.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fa-brands fa-docker icon"></i>
+                    <h3>Docker</h3>
+                    <p>Containerisatie voor consistente omgevingen.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fa-brands fa-git-alt icon"></i>
+                    <h3>Git</h3>
+                    <p>Versiebeheer en CI/CD workflows via GitHub.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fa-brands fa-react icon"></i>
+                    <h3>React.js</h3>
+                    <p>Bouwen van moderne, interactieve interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ervaring" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Mijn Loopbaan</h2>
+            <div class="timeline">
+                <div class="timeline-item left fade-in">
+                    <div class="content">
+                        <span class="date">2019 - 2026</span>
+                        <h3>McDonald's Leiden</h3>
+                        <p>Crewlid focus op klanttevredenheid, teamwork en training van nieuwe medewerkers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right fade-in">
+                    <div class="content">
+                        <span class="date">2023</span>
+                        <h3>Technolab Stage</h3>
+                        <p>Softwareontwikkelaar stagiair. Gewerkt aan PHP, SQL en JS projecten binnen een innovatief team.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left fade-in">
+                    <div class="content">
+                        <span class="date">2023</span>
+                        <h3>MBO Rijnland</h3>
+                        <p>Behalen van MBO niveau 4 diploma Software Development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="over" class="section">
+        <div class="container about-grid">
+            <div class="about-image fade-in">
+                <img src="https://via.placeholder.com/400" alt="Kane" class="circle-img">
+            </div>
+            <div class="about-text fade-in">
+                <h2 class="section-title" style="text-align: left;">Wie is Kane de Roode?</h2>
+                <p>Ik ben een gedreven softwareontwikkelaar met een sterke achtergrond in klantgericht werken.
+                     Mijn technische kennis combineer ik met sociale vaardigheden, 
+                     waardoor ik effectieve en gebruiksvriendelijke oplossingen ontwikkel.</p>
+                <div class="soft-skills">
+                    <div class="skill-tag">Teamwork</div>
+                    <div class="skill-tag">Probleemoplossend</div>
+                    <div class="skill-tag">Klantgericht</div>
+                    <div class="skill-tag">Stressbestendig</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Laten we samenwerken</h2>
+                <p>Heb je een project of wil je kennis maken? Neem gerust contact op.</p>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-envelope"></i> kanederoode@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 06-49610694</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Regio Leiden, NL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kane de Roode. Gemaakt met focus op rust en duidelijkheid.</p>
+        </div>
     </footer>
 
     <script src="scripts/script.js"></script>
